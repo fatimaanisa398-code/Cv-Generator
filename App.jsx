@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
-import CVForm from './components/CVForm'
-import CoverLetterGen from './components/CoverLetterGen'
-import Settings from './components/Settings'
+import CVForm from './CVForm'
+import CoverLetterGen from './CoverLetterGen'
+import Settings from './Settings'
 import { FaFileAlt, FaEnvelope, FaCog, FaDownload } from 'react-icons/fa'
 
 function App() {
