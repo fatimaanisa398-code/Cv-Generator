@@ -16,7 +16,7 @@ from cv_generator import CVGenerator
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://cv-generator-ebon.vercel.app"])
 
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama3-8b-8192"
