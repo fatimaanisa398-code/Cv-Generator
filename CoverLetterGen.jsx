@@ -30,7 +30,7 @@ function CoverLetterGen({ apiKey }) {
 
     setLoading(true)
     try {
-      const res = await axios.post('/api/cover-letter', {
+      const res = await axios.post(https://anisafatima.pythonanywhere.com/api/, {
         ...formData,
         api_key: apiKey
       })
