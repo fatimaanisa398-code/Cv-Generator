@@ -64,10 +64,7 @@ function CVForm({ apiKey }) {
 
     setLoading(true)
     try {
-      const res = await axios.post('/api/ai-generate', {
-        job_title: aiJobTitle,
-        api_key: apiKey
-      })
+      const res = await axios.post('https://anisafatima.pythonanywhere.com/api/generate', data, { responseType: 'blob' })
       if (experiences[0]) {
         const newExp = [...experiences]
         newExp[0].description = res.data.description
